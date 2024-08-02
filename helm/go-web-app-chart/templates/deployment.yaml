@@ -21,4 +21,3 @@ spec:
             cpu: "20m"
         ports:
         - containerPort: 8080
-      serviceAccountName: go-web-app-service-account
