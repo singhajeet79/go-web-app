@@ -2,8 +2,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: go-web-app
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
@@ -11,7 +9,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: /
+        path: /home
         backend:
           service:
             name: go-web-app
