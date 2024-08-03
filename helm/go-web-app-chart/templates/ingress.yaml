@@ -9,7 +9,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: /home
+        path: /topics
         backend:
           service:
             name: go-web-app
