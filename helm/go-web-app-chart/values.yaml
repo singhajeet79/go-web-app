@@ -9,15 +9,3 @@ image:
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "10213853954"
-
-ingress:
-  enabled: true
-  className: ""
-  annotations: {}
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
-  hosts:
-    - host: go-web-app.local
-      paths:
-        - path: /topics
-          pathType: ImplementationSpecific
