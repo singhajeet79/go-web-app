@@ -17,4 +17,5 @@ ________________________________________________________________________________
 ![argocd_final](https://github.com/user-attachments/assets/479338f8-5222-4dbd-8d07-593397033135)
 # App Status on Kind local cluster
 ![gitops-on-kind-cluster](https://github.com/user-attachments/assets/52412594-8a27-4da2-82d8-66b8d03b51ab)
-
+# App Status on Bare Metal k8s cluster
+![Uploading go-web-app-argocd-final-local-cluster.png…]()
