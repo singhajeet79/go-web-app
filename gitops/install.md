@@ -6,7 +6,7 @@ kubectl patch svc argocd-server -n argocd -p '{"spec": {"ports": [{"port": 443, 
 
 # Retrieve the Initial Admin Password
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o name \
-kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d | awk '{sub(/[-%]+$/, ""); print}'
 
 # Access ArgoCD
 http://<Node_IP>:<NodePort>
