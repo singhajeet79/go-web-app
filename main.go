@@ -28,7 +28,7 @@ func main() {
         http.ServeFile(w, r, "./static/advanced.html")
     })
 
-    err := http.ListenAndServe(":8080", nil)
+    err := http.ListenAndServe(":8084", nil)
     if err != nil {
         log.Fatal(err)
     }
