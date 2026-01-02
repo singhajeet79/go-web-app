@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-// Mocking the renderTemplate function for testing
+// Mocking the renderTemplate function for testing..
 func renderTemplate(w http.ResponseWriter, tmpl string, title string) {
 	// This is a simplified version just for testing
 	// You can add a simple HTML string here for testing
