@@ -42,7 +42,7 @@ jobs:
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
       with:
-        version: v1.56.2
+        version: v1.61.0
   
   push:
     runs-on: ubuntu-latest
@@ -88,7 +88,7 @@ jobs:
     - name: Commit and push changes
       run: |
         git config --global user.name "Ajeet"
-        git config --global user.email "singhajeet24@outlook.com"
+        git config --global user.email "singhajeet77@gmail.com"
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
         git push
